@@ -4,8 +4,8 @@ const Header = (props) => {
     return (
         <>
         <br/> 
-            <h1 className={"line-1 anim-typewriter"}>
-                {props.children}
+            <h1 style={{display: 'flex', justifyContent: 'center'}}>
+                {props.children} 
             </h1>
         </>
     )
