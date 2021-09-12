@@ -4,13 +4,12 @@ import './Card.css';
 const Card = ({list}) => {
     return (
         <div className="container">
-            <br/>
             {
-                list.map((entry, idx) => {
+                list.map(entry => {
                     return (
-                        <div className="card" key={list[idx]}>
-                            {entry}
-                        </div>
+                        <>
+                            {entry} <br />
+                        </>
                     )
                 })
             }
