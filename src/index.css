@@ -1,7 +1,7 @@
 .App {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(252, 247, 248);
-  color: rgba(39, 93, 173);
+  background-color: #FAF3DD;
+  color: #68B0AB;
   display: flex;
   justify-content: center;
   flex-direction: column;

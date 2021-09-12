@@ -5,9 +5,14 @@ const About = () => {
     return (
         <div>
             <div style={{
-                borderColor: 'rgb(171, 169, 195)',
+                borderColor: '#8FC0A9',
                 borderStyle: 'solid',
-                borderRadius: '10px'
+                borderRadius: '10px',
+                display: 'flex',
+                width: '98px',
+                justifyContent: 'flex-end',
+                marginLeft: '94.5%',
+
             }}></div>
 
             <table className="table">
@@ -22,7 +27,11 @@ const About = () => {
                             <i class="fab fa-github-square fa-2x"></i>
                         </a>
                     </td>
-                    <td><i class="fas fa-file-download fa-2x"></i></td>
+                    <td>
+                        <a className="links" download href="kat_schmidt_resume.pdf">
+                            <i class="fas fa-file-download fa-2x"></i>
+                        </a>
+                    </td>
                 </tr>
             </table>
         </div>
