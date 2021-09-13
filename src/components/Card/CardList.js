@@ -5,31 +5,41 @@ import {
     CardContent,
 } from '@material-ui/core';
 
-import {getGitHubUser} from '../../utils/utils';
 
 import './Card.css';
 
 const CardList = ({list}) => {
 
     const handleCardClick = () => {
-        const url = getGitHubUser('TheGreatestPretender')
-    /*     window.location.href= 'https://www.google.com' */
+        console.log(list)
+    }
+
+    const renderCards = list => {
+        console.log(list.length)
+        if (list.length !== 0) {
+            list.map((entry, idx) => {
+                return (
+                    <Card onClick={handleCardClick} className="card">
+                        <CardContent>
+                            <a href={entry}>
+                                {idx}
+                            </a>
+                        </CardContent>
+                    </Card>
+                )
+            })
+        } else {
+            return (
+                <div>
+                    fuck
+                </div>
+            )
+        }
     }
 
     return (
         <div className="container">
-            {
-                list.map((entry, idx) => {
-                    return (
-                        <Card key={idx} onClick={handleCardClick} style={{backgroundColor: '#4A7C59', marginLeft: '10px'}}>
-                            <CardContent style={{color:'#FAF3DD'}}>
-                                {entry} 
-                            </CardContent>
-
-                        </Card>
-                    )
-                })
-            }
+            {renderCards(list)}
         </div>
     )
 };
