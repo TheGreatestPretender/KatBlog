@@ -2,3 +2,17 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #68B0AB;
+    color: black;
+    padding: 10px;
+    margin-left: 101px;
+    margin-right: 797px;
+    display: inline-block;
+}
